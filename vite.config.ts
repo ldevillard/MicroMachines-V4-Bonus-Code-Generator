@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-    base: "/mmv4-bonus-code-generator/",
+    base: "/MicroMachines-V4-Bonus-Code-Generator/",
 });
