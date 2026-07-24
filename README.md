@@ -6,6 +6,8 @@ A small web app that generates every Micro Machines V4 bonus code from a profile
 
 Available online: [Micro Machines V4 Bonus Code Generator](https://ldevillard.github.io/MicroMachines-V4-Bonus-Code-Generator/)
 
+Read the article: [Reverse Engineering Micro Machines V4's Bonus Code System](https://medium.com/@logandvllrd/reverse-engineering-micro-machines-v4s-bonus-code-system-8e15830014f5)
+
 Supports:
 
 - ✅ **PC**
