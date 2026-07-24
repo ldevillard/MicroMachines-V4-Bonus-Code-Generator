@@ -20,8 +20,25 @@ h1
 
 main > p 
 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: var(--pico-muted-color);
+}
+
+.hero 
+{
+    max-width: 28rem;
+    margin: 0 0 2rem;
+    overflow: hidden;
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.12);
+}
+
+.hero img 
+{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 article 
@@ -29,6 +46,15 @@ article
     border: 1px solid var(--pico-muted-border-color);
     border-radius: 1rem;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.08);
+}
+
+.instructions 
+{
+    margin-bottom: 1.5rem;
+    padding: 0.85rem 1rem;
+    border-left: 0.25rem solid var(--pico-primary);
+    border-radius: 0.25rem;
+    background: color-mix(in srgb, var(--pico-primary) 8%, transparent);
 }
 
 button 
