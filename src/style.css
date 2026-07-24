@@ -1,4 +1,110 @@
+body 
+{
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top, rgba(16, 149, 193, 0.12), transparent 32rem),
+        var(--pico-background-color);
+}
+
+main.container 
+{
+    max-width: 58rem;
+    padding-block: 4rem;
+}
+
+h1 
+{
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.04em;
+}
+
+main > p 
+{
+    margin-bottom: 2rem;
+    color: var(--pico-muted-color);
+}
+
+article 
+{
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.08);
+}
+
+button 
+{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+hr 
+{
+    margin-block: 2rem;
+}
+
+table 
+{
+    margin-bottom: 0;
+}
+
+tbody th 
+{
+    font-weight: 500;
+}
+
+td:last-child,
+th:last-child 
+{
+    text-align: right;
+}
+
+code 
+{
+    padding: 0.35rem 0.55rem;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+}
+
 [role="alert"] 
 {
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+    padding: 0.75rem 1rem;
+    border-left: 0.25rem solid currentColor;
+    border-radius: 0.25rem;
+    background: rgba(198, 40, 40, 0.08);
     color: #c62828;
+}
+
+@media (max-width: 576px) 
+{
+    main.container 
+    {
+        padding-block: 2rem;
+    }
+
+    article 
+    {
+        padding-inline: 1rem;
+    }
+
+    table 
+    {
+        font-size: 0.85rem;
+    }
+
+    th,
+    td 
+    {
+        padding-inline: 0.4rem;
+    }
+
+    code 
+    {
+        font-size: 0.75rem;
+        letter-spacing: 0.04em;
+    }
 }
