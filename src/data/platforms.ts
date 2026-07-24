@@ -1,4 +1,4 @@
-export type PlatformId = "pc" | "ps2";
+export type PlatformId = "pc" | "ps2" | "psp";
 
 export interface PlatformConfiguration 
 {
@@ -20,9 +20,17 @@ export const platforms: Record<PlatformId, PlatformConfiguration> =
 
     ps2: 
     {
-        name: "PlayStation 2",
+        name: "PS2",
         modulus: 0x13108965ac7cf4191n,
         privateExponent: 0xd0d8a74d71dd59edn,
+        xorMask: 0xcc0de3a54e7550f4n,
+    },
+
+    psp: 
+    {
+        name: "PSP",
+        modulus: 0x19bdf4676f7dfa713n,
+        privateExponent: 0x12f6011d0762d2461n,
         xorMask: 0xcc0de3a54e7550f4n,
     },
 };

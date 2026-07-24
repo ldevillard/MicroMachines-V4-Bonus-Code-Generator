@@ -10,8 +10,8 @@ Supports:
 
 - ✅ **PC**
 - ✅ **PlayStation 2**
-- ❌ **Nintendo DS**
-- ❌ **PSP**
+- ✅ **PSP**
+- ➖ **Nintendo DS** - bonus code system not available
 - ✅ All **10 in-game bonuses**
 
 ## Usage
