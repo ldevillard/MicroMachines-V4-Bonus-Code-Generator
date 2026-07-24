@@ -13,18 +13,18 @@ Supports:
 
 ## Usage
 
-1. Open **Profile** from the main menu.
+**1.** Open **Profile** from the main menu.
 
-   <img src="assets/mmv4-menu.png" alt="Profile option in the main menu" width="700">
+<img src="assets/mmv4-menu.png" alt="Profile option in the main menu" width="350">
 
-2. Select **Bonus** in the Profile Manager.
+**2.** Select **Bonus** in the Profile Manager.
 
-   <img src="assets/mmv4-bonus.png" alt="Bonus option in the Profile Manager" width="700">
+<img src="assets/mmv4-bonus.png" alt="Bonus option in the Profile Manager" width="350">
 
-3. Enter the displayed access code in the generator.
+**3.** Enter the displayed access code in the generator.
 
-   <img src="assets/mmv4-bonus-menu.png" alt="Access code displayed in the Bonus menu" width="700">
+<img src="assets/mmv4-bonus-menu.png" alt="Access code displayed in the Bonus menu" width="350">
 
-4. Select a locked bonus and enter its generated code.
+**4.** Select a locked bonus and enter its generated code.
 
-   <img src="assets/mmv4-bonus-code.png" alt="Bonus code entry screen" width="700">
+<img src="assets/mmv4-bonus-code.png" alt="Bonus code entry screen" width="350">
