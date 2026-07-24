@@ -1,6 +1,10 @@
 import { generateBonusCode } from "../core/bonus-code";
 import { platforms, type PlatformId, } from "../data/platforms";
 
+type Theme = "light" | "dark";
+
+const THEME_STORAGE_KEY = "mmv4-theme";
+
 const BONUS_NAMES = 
 [
     "Retro Cam",
@@ -17,6 +21,8 @@ const BONUS_NAMES =
 
 export function initializeApp(): void 
 {
+    const themeToggle = document.querySelector<HTMLButtonElement>("#theme-toggle");
+
     const platformSelect = document.querySelector<HTMLSelectElement>("#platform");
 
     const profileInput = document.querySelector<HTMLInputElement>("#profile-id");
@@ -27,10 +33,42 @@ export function initializeApp(): void
 
     const errorOutput = document.querySelector<HTMLParagraphElement>("#error");
 
-    if (!platformSelect || !profileInput || !generateButton || !results || !errorOutput)
+    if (!themeToggle || !platformSelect || !profileInput || !generateButton || !results || !errorOutput)
     {
         throw new Error("Required UI element not found.");
     }
+
+    const colorSchemePreference = window.matchMedia("(prefers-color-scheme: dark)");
+    const preferredTheme = colorSchemePreference.matches ? "dark" : "light";
+    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+    let currentTheme: Theme = savedTheme === "light" || savedTheme === "dark" ? savedTheme : preferredTheme;
+
+    const applyTheme = (theme: Theme): void =>
+    {
+        currentTheme = theme;
+        document.documentElement.dataset.theme = theme;
+        themeToggle.setAttribute("aria-label", `Switch to ${theme === "light" ? "dark" : "light"} theme`);
+    };
+
+    applyTheme(currentTheme);
+
+    colorSchemePreference.addEventListener("change", (event) =>
+    {
+        const hasSavedTheme = localStorage.getItem(THEME_STORAGE_KEY) !== null;
+
+        if (!hasSavedTheme)
+        {
+            applyTheme(event.matches ? "dark" : "light");
+        }
+    });
+
+    themeToggle.addEventListener("click", () =>
+    {
+        const nextTheme = currentTheme === "light" ? "dark" : "light";
+
+        applyTheme(nextTheme);
+        localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+    });
 
     generateButton.addEventListener("click", () => 
     {
