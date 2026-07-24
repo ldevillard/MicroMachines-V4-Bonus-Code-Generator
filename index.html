@@ -30,21 +30,21 @@
                     <input id="profile-id" type="number" min="0" max="65535" required>
                 </label>
 
-                <label for="bonus-index">
-                    Bonus index
-                    <input id="bonus-index" type="number" min="0" max="9" value="0" required>
-                </label>
-
                 <button id="generate" type="button">
-                    Generate bonus code
+                    Generate all bonus codes
                 </button>
 
                 <hr>
 
-                <label for="result">Generated code</label>
-                <output id="result" class="bonus-code">
-                    —————————————
-                </output>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Bonus</th>
+                            <th scope="col">Generated code</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results" aria-live="polite"></tbody>
+                </table>
 
                 <p id="error" role="alert" hidden></p>
             </article>
