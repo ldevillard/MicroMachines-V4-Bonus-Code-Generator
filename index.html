@@ -1,13 +1,71 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mmv4-bonus-code-generator</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
+        <meta name="color-scheme" content="light dark">
+
+        <title>MMV4 Bonus Code Generator</title>
+    </head>
+
+    <body>
+        <main class="container">
+            <h1>Micro Machines V4</h1>
+            <p>Bonus code generator for PC and PlayStation 2.</p>
+
+            <article>
+                <label for="platform">
+                    Platform
+                    <select id="platform">
+                        <option value="pc">PC</option>
+                        <option value="ps2-pal">
+                            PlayStation 2
+                        </option>
+                    </select>
+                </label>
+
+                <label for="profile-id">
+                    Profile access code
+                    <input
+                        id="profile-id"
+                        type="number"
+                        min="0"
+                        max="65535"
+                        required
+                    >
+                </label>
+
+                <label for="bonus-index">
+                    Bonus index
+                    <input
+                        id="bonus-index"
+                        type="number"
+                        min="0"
+                        max="32"
+                        value="0"
+                        required
+                    >
+                </label>
+
+                <button id="generate" type="button">
+                    Generate bonus code
+                </button>
+
+                <hr>
+
+                <label for="result">Generated code</label>
+                <output
+                    id="result"
+                    class="bonus-code"
+                >
+                    —————————————
+                </output>
+            </article>
+        </main>
+
+        <script type="module" src="/src/main.ts"></script>
+    </body>
 </html>
