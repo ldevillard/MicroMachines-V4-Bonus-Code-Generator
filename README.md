@@ -1,6 +1,6 @@
 # Micro Machines V4 Bonus Code Generator
 
-![Micro Machines V4](assets/micromachinev4.jpg)
+<img src="assets/micromachinev4.jpg" alt="Micro Machines V4" width="640">
 
 A small web app that generates every Micro Machines V4 bonus code from a profile access code.
 
