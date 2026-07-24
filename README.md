@@ -8,8 +8,11 @@ Available online: [Micro Machines V4 Bonus Code Generator](https://ldevillard.gi
 
 Supports:
 
-- **PC** and **PlayStation 2**
-- All **10 in-game bonuses**
+- ✅ **PC**
+- ✅ **PlayStation 2**
+- ❌ **Nintendo DS**
+- ❌ **PSP**
+- ✅ All **10 in-game bonuses**
 
 ## Usage
 
