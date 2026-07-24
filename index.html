@@ -21,33 +21,18 @@
                     Platform
                     <select id="platform">
                         <option value="pc">PC</option>
-                        <option value="ps2-pal">
-                            PlayStation 2
-                        </option>
+                        <option value="ps2">PlayStation 2</option>
                     </select>
                 </label>
 
                 <label for="profile-id">
                     Profile access code
-                    <input
-                        id="profile-id"
-                        type="number"
-                        min="0"
-                        max="65535"
-                        required
-                    >
+                    <input id="profile-id" type="number" min="0" max="65535" required>
                 </label>
 
                 <label for="bonus-index">
                     Bonus index
-                    <input
-                        id="bonus-index"
-                        type="number"
-                        min="0"
-                        max="32"
-                        value="0"
-                        required
-                    >
+                    <input id="bonus-index" type="number" min="0" max="9" value="0" required>
                 </label>
 
                 <button id="generate" type="button">
@@ -57,10 +42,7 @@
                 <hr>
 
                 <label for="result">Generated code</label>
-                <output
-                    id="result"
-                    class="bonus-code"
-                >
+                <output id="result" class="bonus-code">
                     —————————————
                 </output>
             </article>
